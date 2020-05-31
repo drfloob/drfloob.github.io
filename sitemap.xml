@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>/posts/2020-05-30-booting-graphical-before-network/</loc>
+    <loc>/posts/20200530-booting-graphical-before-network/</loc>
     <lastmod>2020-05-30T22:05:07-07:00</lastmod>
   </url>
   
@@ -35,6 +35,41 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2020-05-30T22:05:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/classification/</loc>
+    <lastmod>2020-05-20T12:44:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2020-05-20T12:44:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20200520-jhu-data-science-work/</loc>
+    <lastmod>2020-05-20T12:44:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2020-05-20T12:44:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/crime/</loc>
+    <lastmod>2020-05-20T12:06:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/20200520-exploring-the-bay-area-through-data/</loc>
+    <lastmod>2020-05-20T12:06:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/real-estate/</loc>
+    <lastmod>2020-05-20T12:06:32-07:00</lastmod>
   </url>
   
 </urlset>

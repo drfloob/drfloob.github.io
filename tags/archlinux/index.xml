@@ -13,10 +13,10 @@
     
     <item>
       <title>Slow Linux boot? Don&#39;t make your desktop wait for a network connection.</title>
-      <link>/posts/2020-05-30-booting-graphical-before-network/</link>
+      <link>/posts/20200530-booting-graphical-before-network/</link>
       <pubDate>Sat, 30 May 2020 22:05:07 -0700</pubDate>
       
-      <guid>/posts/2020-05-30-booting-graphical-before-network/</guid>
+      <guid>/posts/20200530-booting-graphical-before-network/</guid>
       <description>TODO:
  Describe the symptoms Explain the underlying problem The fix  </description>
     </item>

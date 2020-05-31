@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crime on Things</title>
+    <link>/tags/crime/</link>
+    <description>Recent content in crime on Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 May 2020 12:06:32 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/crime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring the Bay Area Through Data</title>
+      <link>/posts/20200520-exploring-the-bay-area-through-data/</link>
+      <pubDate>Wed, 20 May 2020 12:06:32 -0700</pubDate>
+      
+      <guid>/posts/20200520-exploring-the-bay-area-through-data/</guid>
+      <description>Link to the Report.
+This is an R project I did a few years ago that explores Bay Area data in search of where my wife and I should live when we moved up here.</description>
+    </item>
+    
+  </channel>
+</rss>

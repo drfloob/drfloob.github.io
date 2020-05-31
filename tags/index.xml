@@ -29,5 +29,50 @@
       <description></description>
     </item>
     
+    <item>
+      <title>classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Wed, 20 May 2020 12:44:48 -0700</pubDate>
+      
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>/tags/data-science/</link>
+      <pubDate>Wed, 20 May 2020 12:44:48 -0700</pubDate>
+      
+      <guid>/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Wed, 20 May 2020 12:44:48 -0700</pubDate>
+      
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crime</title>
+      <link>/tags/crime/</link>
+      <pubDate>Wed, 20 May 2020 12:06:32 -0700</pubDate>
+      
+      <guid>/tags/crime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>real estate</title>
+      <link>/tags/real-estate/</link>
+      <pubDate>Wed, 20 May 2020 12:06:32 -0700</pubDate>
+      
+      <guid>/tags/real-estate/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

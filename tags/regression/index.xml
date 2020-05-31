@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regression on Things</title>
+    <link>/tags/regression/</link>
+    <description>Recent content in regression on Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 May 2020 12:44:48 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Johns Hopkins University Data Science Specialization Work</title>
+      <link>/posts/20200520-jhu-data-science-work/</link>
+      <pubDate>Wed, 20 May 2020 12:44:48 -0700</pubDate>
+      
+      <guid>/posts/20200520-jhu-data-science-work/</guid>
+      <description>In 2016 I completed, then mentored for, the Johns Hopkins University Data Science Specialization on Coursera. My project work was pretty interesting, and resulted in some fun Rpubs.</description>
+    </item>
+    
+  </channel>
+</rss>
