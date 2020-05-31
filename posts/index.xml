@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Things</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2020 22:46:44 -0700</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A robust Qt Cookiecutter Template: desktop and mobile, continuous integration, auto linters &amp; formatters</title>
+      <link>/posts/20200530-219design-cookiecutter-template-qt-cpp-mobile-ci/</link>
+      <pubDate>Sat, 30 May 2020 22:46:44 -0700</pubDate>
+      
+      <guid>/posts/20200530-219design-cookiecutter-template-qt-cpp-mobile-ci/</guid>
+      <description>My wife&amp;rsquo;s company decided to share their incredible Qt project template, Open Source (BSD)! If you&amp;rsquo;re interested in building a user-facing application in C++, take a look.</description>
+    </item>
+    
+    <item>
+      <title>Slow Linux boot? Don&#39;t make your desktop wait for a network connection.</title>
+      <link>/posts/2020-05-30-booting-graphical-before-network/</link>
+      <pubDate>Sat, 30 May 2020 22:05:07 -0700</pubDate>
+      
+      <guid>/posts/2020-05-30-booting-graphical-before-network/</guid>
+      <description>TODO:
+ Describe the symptoms Explain the underlying problem The fix  </description>
+    </item>
+    
+  </channel>
+</rss>
