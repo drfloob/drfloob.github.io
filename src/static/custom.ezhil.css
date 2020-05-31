@@ -36,10 +36,14 @@ h1.title {
 .site-title a, .site-title a:hover {
     font-size: 3rem;
     color: #d35c5c; 
+ color: #e0ac16; 
+ color: #88a4d3; 
 }
 .site-description h2 {
     padding-left: 2em;
     color: #d35c5c; 
+ color: #e0ac16; 
+ color: #88a4d3; 
 }
 
 a, a:hover {
