@@ -22,6 +22,11 @@ body {
     background-color: #231e18; 
     font-size: 17px;
     line-height: 1.4;
+    background-image: url("images/hasta.png");
+    background-position: right bottom;
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-attachment: fixed;
+
 }
 
 .wrapper {
