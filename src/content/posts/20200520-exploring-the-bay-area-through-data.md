@@ -2,7 +2,6 @@
 title: "Exploring the Bay Area Through Data"
 date: 2020-05-20T12:06:32-07:00
 tags: ["crime", "real estate"]
-draft: true
 ---
 
 [Link to the Report](http://rpubs.com/aj_heller/exploringTheBay).

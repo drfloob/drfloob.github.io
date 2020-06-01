@@ -2,7 +2,6 @@
 title: "Johns Hopkins University Data Science Specialization Work"
 date: 2020-05-20T12:44:48-07:00
 tags: ["data science", "classification", "regression"]
-draft: true
 ---
 
 In 2016 I completed, then mentored for, the [Johns Hopkins University Data Science Specialization][jhu-course] on Coursera. My project work was pretty interesting, and resulted in some fun Rpubs.

@@ -54,15 +54,10 @@ summaryLength = 20
 #     customJS = ["js/abc.js", "js/xyz.js", "https://code.jquery.com/jquery-3.4.1.js"]
 
 # Main menu which appears below site header.
-# [[menu.main]]
-# name = "home"
-# url = "/"
-# weight = 1
-
 [[menu.main]]
-name = "posts"
-url = "/posts"
-weight = 2
+name = "home"
+url = "/"
+weight = 1
 
 [[menu.main]]
 name = "about"

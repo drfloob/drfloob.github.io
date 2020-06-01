@@ -1,7 +1,7 @@
 build:
 	cd src && \
 	rm -rf public/ && \
-	hugo -D && \
+	hugo && \
 	cp -rf public/* ../
 
 clean:

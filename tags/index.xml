@@ -6,26 +6,44 @@
     <description>Recent content in Tags on Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 22:05:07 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 22:46:44 -0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>archlinux</title>
-      <link>/tags/archlinux/</link>
-      <pubDate>Sat, 30 May 2020 22:05:07 -0700</pubDate>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Sat, 30 May 2020 22:46:44 -0700</pubDate>
       
-      <guid>/tags/archlinux/</guid>
+      <guid>/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>systemd</title>
-      <link>/tags/systemd/</link>
-      <pubDate>Sat, 30 May 2020 22:05:07 -0700</pubDate>
+      <title>cookiecutter</title>
+      <link>/tags/cookiecutter/</link>
+      <pubDate>Sat, 30 May 2020 22:46:44 -0700</pubDate>
       
-      <guid>/tags/systemd/</guid>
+      <guid>/tags/cookiecutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qt</title>
+      <link>/tags/qt/</link>
+      <pubDate>Sat, 30 May 2020 22:46:44 -0700</pubDate>
+      
+      <guid>/tags/qt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>/tags/template/</link>
+      <pubDate>Sat, 30 May 2020 22:46:44 -0700</pubDate>
+      
+      <guid>/tags/template/</guid>
       <description></description>
     </item>
     

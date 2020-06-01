@@ -3,7 +3,7 @@
 	url = https://github.com/panr/hugo-theme-terminal.git
 [submodule "themes/ezhil"]
 	path = src/themes/ezhil
-	url = https://github.com/vividvilla/ezhil.git
+	url = https://github.com/drfloob/ezhil.git
 [submodule "themes/hermit"]
 	path = src/themes/hermit
 	url = https://github.com/Track3/hermit.git

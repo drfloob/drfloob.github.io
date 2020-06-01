@@ -19,31 +19,41 @@
 */
 
 body {
-    background-color: #231e18;
-    font-size: 16px;
+    background-color: #231e18; 
+    font-size: 17px;
+    line-height: 1.4;
 }
 
 .wrapper {
-    max-width: 888px;
+    max-width: 924px;
 }
 
 h1.title {
-    color: #b49368; 
     font-size: 2rem;
     font-weight: bold;
 }
 
 .site-title a, .site-title a:hover {
     font-size: 3rem;
-    color: #d35c5c; 
- color: #e0ac16; 
- color: #88a4d3; 
+    color: #88a4d3; 
 }
+
 .site-description h2 {
     padding-left: 2em;
-    color: #d35c5c; 
- color: #e0ac16; 
- color: #88a4d3; 
+    color: #88a4d3; 
+}
+
+.feather {
+    width: 32px;
+    height: 32px;
+}
+
+.header .site-description nav ul svg {
+    max-height: 32px;
+}
+
+.header nav {
+    margin-top: 0px;
 }
 
 a, a:hover {
@@ -55,3 +65,10 @@ a, a:hover {
     color: #88a4d3; 
 }
 
+.post ul li {
+    margin-bottom: 3px;
+}
+
+.post-tags .tags a {
+    font-size: 14px;
+}
