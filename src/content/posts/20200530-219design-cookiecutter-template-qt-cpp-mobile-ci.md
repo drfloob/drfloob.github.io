@@ -6,8 +6,6 @@ tags: ["Qt", "cookiecutter", "template", "android"]
 
 My wife's company decided to share their [incredible Qt project template][219design-qt-template], Open Source (BSD)! If you're interested in building a user-facing application in C++, take a look. It gives you a lot out of the box.
 
-[incredible Qt project template][219design-qt-template], Open Source (BSD)! If you're interested in building a user-facing application in C++, take a look. It gives you a lot out of the box.
-
 * Continuous integration for your app via Github Actions' Workflows, triggered on every commit.
 * Designed to be truly cross-platform: Windows, Mac, Linux, Android and iPhone!
 * Preconfigured dev tools: formatters, linters, test runners.

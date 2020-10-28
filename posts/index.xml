@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 22:46:44 -0700</lastBuildDate>
-    
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 30 May 2020 22:46:44 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A robust Qt Cookiecutter Template: desktop and mobile, continuous integration, auto linters &amp; formatters</title>
       <link>/posts/20200530-219design-cookiecutter-template-qt-cpp-mobile-ci/</link>
