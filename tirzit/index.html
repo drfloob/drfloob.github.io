@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<title>Tirzit</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #0a7d5c;
+    --border: #d8d8dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #98989d;
+      --accent: #34c98f;
+      --border: #3a3a3c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px calc(20px + env(safe-area-inset-bottom));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+  }
+  label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 16px 0 6px;
+  }
+  label:first-of-type { margin-top: 0; }
+  input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    -webkit-appearance: none;
+  }
+  input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: -1px;
+  }
+  .result {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: #ffffff;
+    text-align: center;
+  }
+  .result .units {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .result .units-label {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  .result .ml {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+  .error {
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 14px;
+    background: #b0362e;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+  <h1>Tirzit</h1>
+  <p class="subtitle">Tirzepatide dosing calculator</p>
+
+  <div class="card">
+    <label for="vialMg">Vial strength (mg tirz)</label>
+    <input id="vialMg" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 10" />
+
+    <label for="solutionMl">Solution volume (mL)</label>
+    <input id="solutionMl" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 2" />
+
+    <label for="doseMg">Target dose (mg)</label>
+    <input id="doseMg" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 2.5" />
+
+    <div id="result" class="result hidden">
+      <div class="units" id="unitsOut">0</div>
+      <div class="units-label">units (U-100 syringe)</div>
+      <div class="ml" id="mlOut"></div>
+    </div>
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "tirzit-values";
+    const vialMg = document.getElementById("vialMg");
+    const solutionMl = document.getElementById("solutionMl");
+    const doseMg = document.getElementById("doseMg");
+    const resultEl = document.getElementById("result");
+    const errorEl = document.getElementById("error");
+    const unitsOut = document.getElementById("unitsOut");
+    const mlOut = document.getElementById("mlOut");
+
+    function loadSaved() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        if (saved.vialMg != null) vialMg.value = saved.vialMg;
+        if (saved.solutionMl != null) solutionMl.value = saved.solutionMl;
+        if (saved.doseMg != null) doseMg.value = saved.doseMg;
+      } catch (e) {}
+    }
+
+    function save() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          vialMg: vialMg.value,
+          solutionMl: solutionMl.value,
+          doseMg: doseMg.value,
+        }));
+      } catch (e) {}
+    }
+
+    function calculate() {
+      const x = parseFloat(vialMg.value);
+      const y = parseFloat(solutionMl.value);
+      const z = parseFloat(doseMg.value);
+
+      if (!isFinite(x) || !isFinite(y) || !isFinite(z) || x <= 0 || y <= 0 || z < 0) {
+        resultEl.classList.add("hidden");
+        errorEl.classList.add("hidden");
+        return;
+      }
+
+      if (z > x) {
+        resultEl.classList.add("hidden");
+        errorEl.textContent = "Target dose exceeds total mg in the vial.";
+        errorEl.classList.remove("hidden");
+        return;
+      }
+
+      const concentration = x / y; // mg per mL
+      const volumeMl = z / concentration;
+      const units = volumeMl * 100; // U-100 syringe: 100 units per mL
+
+      unitsOut.textContent = units.toFixed(1);
+      mlOut.textContent = volumeMl.toFixed(3) + " mL";
+      errorEl.classList.add("hidden");
+      resultEl.classList.remove("hidden");
+    }
+
+    [vialMg, solutionMl, doseMg].forEach((el) => {
+      el.addEventListener("input", () => {
+        save();
+        calculate();
+      });
+    });
+
+    loadSaved();
+    calculate();
+  </script>
+</body>
+</html>
